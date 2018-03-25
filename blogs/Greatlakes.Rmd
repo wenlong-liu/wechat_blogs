@@ -3,7 +3,7 @@ title: "greatLakes"
 author: "Wenlong"
 date: "3/25/2018"
 output:   
-  github_document:
+  github_document
 
 ---
 

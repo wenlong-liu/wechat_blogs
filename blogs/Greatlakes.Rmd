@@ -1,0 +1,66 @@
+---
+title: "greatLakes"
+author: "Wenlong"
+date: "3/25/2018"
+output:   
+  github_document:
+
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE,message = FALSE, warning = FALSE)
+```
+
+谢邀 @云舞空城 @恒源祥 。
+```{r}
+require(tidyverse)
+require(usfertilizer)
+require(fiftystater)
+data("fifty_states")
+data("us_fertilizer_county")
+great_lakes_low =  c("illinois", "indiana","michigan", "minnesota" ,"new york", "ohio", "pennsylvania", "wisconsin")
+great_lakes = c("IL","IN", "MI", "MN", "NY","OH","PA","WI")
+```
+
+## 0. 前言 
+
+美国五大湖流域是个非常大的区域，地形地貌涵盖了高山、平原、湖滩湿地等；土地利用类型也包括了农田、森林、湿地和城区；各个地区的气候类型也有一些差异。如果不考虑某些极端地区和特殊情况，作为种植业和畜牧业主产区之一，美国五大湖区的平原带土壤的肥力和生产力是非常可观的，不知道题主是从哪里得到的结论。 鉴于一句话的回答干货太少，笔者换一个问法：为什么在高强度的农业生产活动下，五大湖区土壤没有退化，依然保持了土壤肥力？
+
+## 1. 五大湖区的地理位置
+
+美国五大湖区涵盖了美国八个州的全部或部分区域，其中明尼苏达(MN), 威斯康辛(WI), 密西根(MI),  伊利诺伊(IL), 印第安纳(IN), 和俄亥俄州(OH) 皆有大量的农业生产活动，本文就主要针对这几个州来讨论。
+
+```{r}
+p_50states = us_fertilizer_county %>% 
+  filter(Year == 1998) %>% 
+  group_by(State) %>% 
+  summarise(Fert_application = as.numeric(sum(Quantity, na.rm = T)),
+            long = as.numeric(mean(INTPTLONG, na.rm = T)),
+            lat = as.numeric(mean(INTPTLAT, na.rm = T))) %>% 
+  rowwise() %>% 
+  mutate(state = tolower(state.name[grep(State, state.abb)])) %>% 
+  mutate(dummy = ifelse(state %in% great_lakes_low, 100,1) )
+p_lakes = filter(p_50states, dummy == 100)         
+         
+ggplot(p_50states,aes(map_id = state)) +
+  geom_map(aes(fill = dummy),map = fifty_states)+
+  expand_limits(x = fifty_states$long, y = fifty_states$lat) +
+  coord_map() +
+  scale_x_continuous(breaks = NULL) + 
+  scale_y_continuous(breaks = NULL) +
+  scale_fill_gradient(name = "Nitrogen application", low = "grey", high = "lightblue",guide = F)+
+  labs(x = "", y = "") +
+  geom_text(data = p_lakes,aes(x = long, y = lat, label = State) )+
+  theme(legend.position = "bottom", 
+        panel.background = element_blank())+
+  coord_fixed(ratio = 1.3)
+```
+
+Fig. 1 美国五大湖区的地理位置 
+  
+## 2. 五大湖区农业区的简介
+
+美国五大湖区的农业非常发达，
+## 3. 农业生产情况下保持土壤肥力的原因
+## 4. 对我国农业生产的启示
+## 5. Take-home points

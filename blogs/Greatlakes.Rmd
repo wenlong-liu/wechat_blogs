@@ -166,14 +166,14 @@ great_lakes_fert = c("IL","IN", "MI", "MN","OH","WI")
 us_fertilizer_county %>% 
   filter(State %in% great_lakes_fert & Year %in% year_plot &
            Farm.Type == "farm") %>% 
-  group_by(State, Year, Fertilizer) %>% 
+  group_by(State, Year, Nutrient) %>% 
   summarise(Quantity = sum(Quantity, na.rm = T)) %>% 
   ggplot(aes(x = as.numeric(Year), y = Quantity, color=State)) +
   geom_point() +
   geom_line()+
   scale_x_continuous(name = "Year")+
   scale_y_continuous(name = "Nutrient input quantity (kg)")+
-  facet_wrap(~Fertilizer, scales = "free", ncol = 2)+
+  facet_wrap(~Nutrient, scales = "free", ncol = 2)+
   ggtitle("Estimated nutrient inputs into arable lands by commercial fertilizer\nfrom 1945 to 2012 in Great Lakes area")+
   theme_bw()
 ```

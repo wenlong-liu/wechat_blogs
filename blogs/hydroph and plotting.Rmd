@@ -1,0 +1,18 @@
+---
+title: "hydrograph"
+author: "Wenlong"
+date: "4/15/2018"
+output: github_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+对于水文工作者来说，降雨-水文过程线图是最基础的数据展示方式，能够制作一张符合要求的水文过程线图(hydrograph)是一项必备技能。笔者今天简要介绍一下降雨-水文过程线图，然后着重介绍几种常用的图表制作软件和制作过程。
+
+1. 降雨水文过程线图介绍
+
+现在科学的核心假定之一是质量守恒与能量守恒定律 (mass balance).  在水文学中，质量守恒的体现形式之一就是水循环，包括(全球大循环与区域小循环)。对于全球循环，
+
+![](http://map.ps123.net/world/UploadFile/201503/2015031023542662.jpg)

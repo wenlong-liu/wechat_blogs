@@ -1,0 +1,21 @@
+---
+title: "Introduction of TIDY data"
+author: "Wenlong"
+date: "3/30/2018"
+output: github_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+记得有一个笑话：数据分析师的80%的时间，都消耗在数据清理上。很多时候数据处理不仅仅是效率的问题，有时候甚至没办法进行数据分析的操作。
+
+```{r}
+if (!require(tidyverse)){
+  install.packages("tidyverse")
+}
+
+```
+
+

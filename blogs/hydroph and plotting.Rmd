@@ -1,11 +1,11 @@
 ---
-title: "hydrograph"
 author: "Wenlong"
 date: "4/15/2018"
-always_allow_html: yes
-#output: github_document
+title: "hydrograph"
 output:
-   html_document
+    html_document:
+      css: ~/wechat_blogs/materials/css/wenlong_codes.css
+      theme: null
 ---
 
 ```{r setup, include=FALSE}
@@ -44,7 +44,7 @@ write.csv(clean_data,"../data/sample_data.csv", row.names = FALSE )
 
 ## 1. 降雨水文过程线图介绍
 
-现在科学的核心假定之一是质量守恒与能量守恒定律 (mass balance).  在水文学中，质量守恒的体现形式之一就是水循环，包括全球大循环与区域小循环。对于全球大循环，海洋的中通过蒸发进入大气层，然后运移到大陆形成降水；降水汇集到河道形成径流，最后在流入海洋。当我们研究河流时，一般认为水文过程是降水驱动的。因此，我们经常讲降雨和水文过程画在一起，形成降雨-水文过程线图。
+**现在科学的核心假定之一是质量守恒与能量守恒定律 (mass balance).  在水文学中，质量守恒的体现形式之一就是水循环，包括全球大循环与区域小循环。**对于全球大循环，海洋的中通过蒸发进入大气层，然后运移到大陆形成降水；降水汇集到河道形成径流，最后在流入海洋。当我们研究河流时，一般认为水文过程是降水驱动的。因此，我们经常讲降雨和水文过程画在一起，形成降雨-水文过程线图。
 
 ![](http://map.ps123.net/world/UploadFile/201503/2015031023542662.jpg)
 Fig.1 全球水循环示意图
@@ -86,7 +86,7 @@ Fig. 3 Excel 制作水文过程线图示例 (Data source: USGS)
 highcharter 提供了Highcharts的R接口。Highchart是一款基于JavaScript的绘图库，可以用来制作多种类型的图表。由于图表渲染较慢，本文中将15min的数据综合为逐日数据。具体代码如下所示。
 
 
-```{r highcharter, message=F, warning=F}
+```{r highcharter, message=F, warning=F, eval= FALSE}
 # load required libraries and data.
 require(highcharter)
 require(tidyverse)

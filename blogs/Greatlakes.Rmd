@@ -3,8 +3,9 @@ title: "greatLakes"
 author: "Wenlong"
 date: "3/25/2018"
 output:   
-  github_document
-
+  html_document:
+    css: ~/wechat_blogs/materials/css/欢喜笔记公号.css
+    theme: null
 ---
 
 ```{r setup, include=FALSE}
@@ -140,7 +141,7 @@ Fig. 3 俄亥俄州某地的多年月平均气温 (Data source: NOAA)
 
 ### 3.2 保护性耕作 (Conservative tillage or non tillage)
 
-除了气候原因之外，美国的农业工作者也一直在致力于通过工程和管理途径来保持土壤肥力。自从经历了上世纪的“黑风暴”之后，美国提出了保护性耕作( Conservative tillage or Non tillage)的思想. 尤其是高效除草剂发明之后，保护性耕作带来的杂草滋生问题得到了缓解，保护性耕作得到了大规模的推广。现在美国拓展了保护性耕作的概念，更多的提出了Crop residue management (作物残留物管理)的概念。主要思想是将秸秆等作物残留物留在农田里，增加土壤的有机物供给。Crop resiue managment的主要应用就包括保护性耕作与轮作等方式。据美国自然资源保护局(NRCS)是数据显示，俄亥俄州的Sandusky 流域(大部分为农业用地)应用较高的作物残留物管理措施 的比例从1982年的5.2%增长到了2012年的64%，这说明该流域超过一半的耕地都应用了各种类型的作物残留物管理措施[注3]。
+除了气候原因之外，美国的农业工作者也一直在致力于通过工程和管理途径来保持土壤肥力。自从经历了上世纪的“黑风暴”之后，美国提出了保护性耕作( Conservative tillage or Non tillage)的思想. 尤其是高效除草剂发明之后，保护性耕作带来的杂草滋生问题得到了缓解，保护性耕作得到了大规模的推广。现在美国拓展了保护性耕作的概念，更多的提出了Crop residue management (作物残留物管理)的概念。主要思想是将秸秆等作物残留物留在农田里，增加土壤的有机物供给。Crop resiue managment的主要应用就包括保护性耕作与轮作等方式。据美国自然资源保护局(NRCS)是数据显示，俄亥俄州的Sandusky 流域(大部分为农业用地)应用较高的作物残留物管理措施 的比例从**1982年的5.2%增长到了2012年的64%**，这说明该流域超过一半的耕地都应用了各种类型的作物残留物管理措施[注3]。
 
 延伸阅读：
 https://zhuanlan.zhihu.com/p/19928530

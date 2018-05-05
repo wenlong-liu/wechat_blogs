@@ -1,18 +1,12 @@
----
-title: "Farmer_age"
-author: "Wenlong"
-date: "4/29/2018"
-output:
-    rmarkdown::github_document
----
-
-```{r setup, include=FALSE}
-knitr::opts_chunk$set(echo = TRUE)
-```
+Farmer\_age
+================
+Wenlong
+4/29/2018
 
 ## 美国农民的平均年龄竟然是58岁！
 
-随着我国城市化的发展，农村的壮劳力逐渐减少，越来越多的年轻人宁可家乡的土地撂荒，也要去外地的工厂打工。在美国也出现了类似的情况。据美国农业统计局在2012年的最新统计，美国农民主要从业者(principal operator)的平均年龄是**58.3**岁；并且农民“老龄化”的趋势已经延续了近30年。
+随着我国城市化的发展，农村的壮劳力逐渐减少，越来越多的年轻人宁可家乡的土地撂荒，也要去外地的工厂打工。在美国也出现了类似的情况。据美国农业统计局在2012年的最新统计，美国农民主要从业者(principal
+operator)的平均年龄是**58.3**岁；并且农民“老龄化”的趋势已经延续了近30年。
 
 ![](https://www.agcensus.usda.gov/Publications/2012/Online_Resources/Highlights/Farm_Demographics/Demographics_Figure_2_150dpi.jpg)
 
@@ -20,9 +14,10 @@ knitr::opts_chunk$set(echo = TRUE)
 
 下图展示了2007年与2012年美国主要农民的年龄分布，由图可得：
 
-* **超过90%的农民大于35岁**；
-* 人数最多的农民处于**55 到64 岁**之间；
-* **超过三分之一的农民大于65岁**。
+  - **超过90%的农民大于35岁**；
+  - 人数最多的农民处于**55 到64
+岁**之间；
+  - **超过三分之一的农民大于65岁**。
 
 ![](https://www.agcensus.usda.gov/Publications/2012/Online_Resources/Highlights/Farm_Demographics/Demographics_Figure_3_150dpi.jpg)
 
@@ -32,9 +27,11 @@ knitr::opts_chunk$set(echo = TRUE)
 
 造成美国农民老龄化的原因很多，笔者认为大致有以下几点：
 
-* 1. 美国的农业机械化程度高，**老年人仍有很强的生产力**;
-* 2. 农场的价格日益增加，很多年轻人没有财力购买农场；
-* 3. 美国年轻人也认为**农民比较“土”，不体面**，更愿意在城市生活。
+  - 1.  美国的农业机械化程度高，**老年人仍有很强的生产力**;
+
+  - 2.  农场的价格日益增加，很多年轻人没有财力购买农场；
+
+  - 3.  美国年轻人也认为**农民比较“土”，不体面**，更愿意在城市生活。
 
 ## 农民老龄化的潜在影响
 
@@ -46,28 +43,13 @@ knitr::opts_chunk$set(echo = TRUE)
 
 ## Take-home points
 
-* 美国农业老龄化严重，主要从业者平均年龄为58.3岁；
-* 老龄化问题暂时没有缓解的趋势；
-* 农民老龄化带来的“代沟”逐渐成为了新技术推广的障碍之一。
+  - 美国农业老龄化严重，主要从业者平均年龄为58.3岁；
+  - 老龄化问题暂时没有缓解的趋势；
+  - 农民老龄化带来的“代沟”逐渐成为了新技术推广的障碍之一。
 
-The end. Thanks for reading.
+The end. Thanks for
+reading.
 
----
+-----
+
 ![](https://github.com/wenlong-liu/wechat_blogs/blob/master/materials/wechatQRcode.JPG?raw=true)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

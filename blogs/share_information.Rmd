@@ -1,0 +1,25 @@
+---
+title: "Share_information"
+author: "Wenlong"
+date: "5/3/2018"
+output:
+    html_document:
+      css: ~/wechat_blogs/materials/css/wenlong_codes.css
+      theme: null
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+# 关于转载
+
+转载可分为两种，**分享给好友或者朋友圈**与**公众号或者其他媒体转载**。
+
+如果读者朋友们觉得对您有所帮助，欢迎分享至朋友圈或者好友，无需作者同意即可。
+
+对于公众号或者其他媒体转载，对于本公众号的**原创文章**，均需要取得联系作者，**取得授权后转载**。如果需要转载，请点击**阅读原文**取得作者的联系方式。
+
+谢谢大家的支持。
+
+![](./materials/qrcode.jpg)

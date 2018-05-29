@@ -3,9 +3,10 @@ title: "Introduction of TIDY data"
 author: "Wenlong"
 date: "3/30/2018"
 output:
-    html_document:
-      css: ~/wechat_blogs/materials/css/wenlong_codes.css
-      theme: null
+  rmarkdown::github_document
+    #html_document:
+     # css: ~/wechat_blogs/materials/css/wenlong_codes.css
+      #theme: null
 ---
 
 ```{r setup, include=FALSE}
@@ -37,7 +38,6 @@ Tidy 数据也有自己的额外开销(overhead), 例如数据表中可能存在
 首先安装Tidyverse, 代码如下所示。其实Tidyverse是一系列优秀软件库的合集，其中最常用的几个package包括 dplyr，ggplot2 和 readr 等。
 
 ```{r, message=FALSE, warning=FALSE}
-# 
 if (!require(tidyverse)){
   install.packages("tidyverse")
 }

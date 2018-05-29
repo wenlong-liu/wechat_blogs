@@ -57,26 +57,14 @@ code a, pre a {
   color: #375f84;
 }
 
-sourceLine:hover {
-  text-decoration: none;
-}
-
-.fl      {color: #1514b5;}
-.fu      {color: #000000;} /* function */
-.ch,.st  {color: #036a07;} /* string */
-.kw      {color: #264D66;} /* keyword */
-.co      {color: #888888;} /* comment */
-
-.message { color: black;   font-weight: bolder;}
-.error   { color: orange;  font-weight: bolder;}
-.warning { color: #6A0366; font-weight: bolder;}
 
 strong, b{
   color:#F00; /* change color to red if highlighted */
 }
-
+/* change color and format for inline codes */
 em, i {
-  color: #009688;
+  color: #F48668;
+  background-color: #F8F8F8;
 }
 
 hr {

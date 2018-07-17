@@ -144,11 +144,15 @@ ggsave(filename = "us_fertilizer_map_2001.jpg", width = 6, height = 4, scale = 1
 
 *ggfertilizer* 还处于开发中，笔者还在添加并测试不同的功能。为了笔者计划将这个扩展包发布到CRAN，更方便大家下载和安装。如果有什么疑问，欢迎大家留言～  
 
-The end.
+The end, thanks for reading.
 
 ## R session
 
 ```{r}
 sessionInfo()
 ```
+
+
+---
+![](../materials/wechatQRcode.JPG)
 

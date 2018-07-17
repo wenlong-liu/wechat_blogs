@@ -170,7 +170,7 @@ Repo](https://github.com/wenlong-liu/wechat_blogs/tree/master/blogs)
 *ggfertilizer*
 还处于开发中，笔者还在添加并测试不同的功能。为了笔者计划将这个扩展包发布到CRAN，更方便大家下载和安装。如果有什么疑问，欢迎大家留言～
 
-The end.
+The end, thanks for reading.
 
 ## R session
 
@@ -212,3 +212,7 @@ sessionInfo()
     ## [37] htmltools_0.3.6   assertthat_0.2.0  colorspace_1.3-2 
     ## [40] labeling_0.3      stringi_1.2.3     lazyeval_0.2.1   
     ## [43] munsell_0.5.0
+
+-----
+
+![](../materials/wechatQRcode.JPG)
